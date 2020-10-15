@@ -1,7 +1,3 @@
----
-title: false
----
-
 # Generating Adversarial Examples for Visual Similarity, Counterfactuals, and the Measurement of Robustness
 
 - Draft of the paper
