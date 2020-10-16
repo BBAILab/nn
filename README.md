@@ -1,1 +1,1 @@
-# nn
+# BB Labs Neural Network Research
