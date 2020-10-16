@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Welcome to the BB-Research Website!
+title: BB Labs Research
 ---
 
 ![Under construction](under_construction.jpg)
