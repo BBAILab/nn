@@ -1,8 +1,13 @@
 # Madry et al. Neural Network Models and Code
 
-This folder contains code that we have modified from that posted by Madry et al. at in this GitHub repo: https://github.com/MadryLab/mnist_challenge
+This folder contains code related to the Madry et al. PGD method for generating adversarial examples.  It contains code from 
+the MadryLab GitHub repositoty, [GitHub_MadryLab](https://github.com/MadryLab/mnist_challenge), that we have revised and also 
+code that we have written based on the work of Madry et al.
 
-Multiple subfolder each contain a different set of self contained files, one for each of these tasks:
 
-- Generating adversarial examples
-- Evaluating/predicting the classification of adverarial examples generated using the method from Madry et al.
+The code has been presented in multiple folders, each one containing a self-contained module of code for a particular purpose:
+
+- <font font-family:"Courier New">madry_adv_eg</font>: contains our adaptaion of Madry wt al.'s code that we used for
+  - Training the Madry neural network
+  - Generating adversarial examples
+- <font font-family:"Courier New">madry_validate</font>: contains code for generating PGD adversarial examples and computing the percentage of adversarial examples that the originating network properly classifies
