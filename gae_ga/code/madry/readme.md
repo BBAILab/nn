@@ -7,7 +7,7 @@ code that we have written based on the work of Madry et al.
 
 The code has been presented in multiple folders, each one containing a self-contained module of code for a particular purpose:
 
-- <font font-family:"Courier New">madry_adv_eg</font>: contains our adaptaion of Madry wt al.'s code that we used for
+- <p font-family:"Courier New">madry_adv_eg</p>: contains our adaptaion of Madry wt al.'s code that we used for
   - Training the Madry neural network
   - Generating adversarial examples
-- <font font-family:"Courier New">madry_validate</font>: contains code for generating PGD adversarial examples and computing the percentage of adversarial examples that the originating network properly classifies
+- <p font-family:"Courier New">madry_validate</p>: contains code for generating PGD adversarial examples and computing the percentage of adversarial examples that the originating network properly classifies
