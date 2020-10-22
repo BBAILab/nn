@@ -1,0 +1,1 @@
+python ga_control.py 0 1999 5 FF.json FF.h5 /files/
