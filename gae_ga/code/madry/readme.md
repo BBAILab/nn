@@ -61,7 +61,7 @@ model = Model()
 saver = tf.train.Saver()
 ```
 
-Then, within the session block, these statements were executed if the model needed to be loaded twice.  IF not, then the last three statements were ommitted or 
+Then, within the session block, these statements were executed if the model needed to be loaded twice.  If not, then the last three statements were ommitted or 
 commented out.
 
 ```python
