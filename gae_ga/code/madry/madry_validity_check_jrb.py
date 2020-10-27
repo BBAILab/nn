@@ -34,9 +34,9 @@ if __name__ == '__main__':
       
       
   ''' read Madry adversarial examples '''
-  print('Reading Madry adversarial examples')
+  print('Reading Madry adversarial examples from ' + config['store_adv_path'])
   madry_adv_eg_labels = np.load('pred.npy')
-  madry_adv_eg_imgs = np.load('attacks/nat_trained/attack_train.npy')
+  madry_adv_eg_imgs = np.load(config['store_adv_path'])
       
   tf.compat.v1.reset_default_graph()
   model = Model()

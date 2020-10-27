@@ -42,7 +42,7 @@ global_step = tf.contrib.framework.get_or_create_global_step()
 model = Model()
 
 ''' JRB wrote the next block of definition statements '''
-x_attack = np.load('attack.npy')
+x_attack = np.load(config['store_adv_path'])
 y_mnist_test = mnist.test.labels
 x_mnist_test = mnist.test.images
 acc_test = []

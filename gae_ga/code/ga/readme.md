@@ -16,8 +16,13 @@ example for one MNIST image.
 	- mad_dist.json
 	- mnist_mad.csv
 	
-The format for the command line statement is as shown below.  This assumes that the command is executed from a location that will execute Python with the required packages 
-installed (keras, Tensorflow 1.14) with the requisite file folder structure.
+Executing ga_control.py requires these packages in an Anaconda/Python environment:
+
+- keras
+- Tensorflow 1.14 (CPU version)
+
+The format for the command line statement is as shown below for a Windows 10 operating system.  This assumes that the command is executed from a location that will 
+execute Python with the required packages as noted above avaialble.
 
 python ga_control.py *start_index* *end_index* *num_cores* FF.json FF.h5 *folder_spec*
 
