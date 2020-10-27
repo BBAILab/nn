@@ -21,6 +21,10 @@ are as is shown below. Note that traineing a neural network will result is a dif
 we used, and so the percentage of correctly classified adversarial examples will be different for your model than 
 it was for ours.
 
+Before executing the steps below start with an IDE with a fresh Python interpreter to ensure 
+that no tensorflow graph exists already.  Otherwise, the new model will be added to that 
+graph rather than replacing it.
+
 <!--- Caveat: It is a known problem with Tesnorflow 1.14 (possibly likely depending on your installation) that you will need to restart the Python interpreter from one step to another when they use Tensorflow to avoid an error in loading the model.  --->
 
 <!--- 1. Download Madry checkpoint files
