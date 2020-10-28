@@ -75,3 +75,7 @@ saver.restore(sess, model_file)
 ```
 
 We found idiosyncracies in execution even when the steps above were taken.  The kernel (in spyder) needed to occasionally be restarted and/or Spyder needed to be restarted.
+
+# Reference
+
+Madry, Aleksander, Aleksandar Makelov, Ludwig Schmidt, Dimitris Tsipras, and Adrian Vladu, Towards Deep Learning Models Resistant to Adversarial Attacks, 2017, https://arxiv.org/abs/1706.06083.
