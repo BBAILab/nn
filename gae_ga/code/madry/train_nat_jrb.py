@@ -18,7 +18,7 @@ import numpy as np
 from tensorflow.examples.tutorials.mnist import input_data
 
 from model import Model
-from pgd_attack import LinfPGDAttack
+#from pgd_attack import LinfPGDAttack
 
 with open('config.json') as config_file:
     config = json.load(config_file)
@@ -42,14 +42,14 @@ global_step = tf.contrib.framework.get_or_create_global_step()
 model = Model()
 
 ''' JRB wrote the next block of definition statements '''
-x_attack = np.load(config['store_adv_path'])
+#x_attack = np.load('attack.npy') # JRB modified to not report accuracy on a previous adversarial example attack
 y_mnist_test = mnist.test.labels
 x_mnist_test = mnist.test.images
 acc_test = []
 acc_train = []
 acc_attack = []
-adv_dict = {model.x_input: x_attack,
-            model.y_input: y_mnist_test}
+#adv_dict = {model.x_input: x_attack,
+#            model.y_input: y_mnist_test}
 mnist_test_dict = {model.x_input: x_mnist_test,
                    model.y_input: y_mnist_test}
 mnist_train_dict = {model.x_input: mnist.train.images,
@@ -136,8 +136,8 @@ with tf.Session() as sess:
       
     ''' JRB wrote the following if block '''
     if ii % num_acc_steps == 0:
-        acc_attack.append(sess.run(model.accuracy, feed_dict={model.x_input: x_attack,
-                                                              model.y_input: y_mnist_test}))
+        #acc_attack.append(sess.run(model.accuracy, feed_dict={model.x_input: x_attack,
+        #                                                      model.y_input: y_mnist_test}))
         acc_train.append(sess.run(model.accuracy, feed_dict={model.x_input: mnist.train.images[:10000],
                                                              model.y_input: mnist.train.labels[:10000]}))
         acc_test.append(sess.run(model.accuracy, feed_dict={model.x_input: x_mnist_test,
@@ -149,9 +149,9 @@ with tf.Session() as sess:
     end = timer()
     training_time += end - start
     
-    if ii % num_adv_steps == 0:
-      adv_acc = sess.run(model.accuracy, feed_dict=adv_dict)
-      print('    Adversarial example accuracy {:.4}%'.format(adv_acc * 100))
+    #if ii % num_adv_steps == 0:
+    #  adv_acc = sess.run(model.accuracy, feed_dict=adv_dict)
+    #  print('    Adversarial example accuracy {:.4}%'.format(adv_acc * 100))
     
   ''' JRB wrote all the code below this comment '''
   mnist_train_acc = sess.run(model.accuracy, feed_dict={model.x_input: mnist.train.images[:10000],
@@ -161,7 +161,7 @@ with tf.Session() as sess:
   mnist_test_acc = sess.run(model.accuracy, feed_dict=mnist_test_dict)
   print('MNIST test accuracy {:.4}%'.format(mnist_test_acc * 100))
   
-  adv_dict = {model.x_input: x_attack,
-              model.y_input: y_mnist_test}
-  adv_acc = sess.run(model.accuracy, feed_dict=adv_dict)
-  print('Adversarial example accuracy {:.4}%'.format(adv_acc * 100))
+  #adv_dict = {model.x_input: x_attack,
+  #            model.y_input: y_mnist_test}
+  #adv_acc = sess.run(model.accuracy, feed_dict=adv_dict)
+  #print('Adversarial example accuracy {:.4}%'.format(adv_acc * 100))

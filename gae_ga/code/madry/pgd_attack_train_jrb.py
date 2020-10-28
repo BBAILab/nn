@@ -83,6 +83,7 @@ if __name__ == '__main__':
     print('No model found')
     sys.exit()
 
+  #tf.compat.v1.reset_default_graph()  # sometimes needed for problems with loading checkpoint
   model = Model()
   attack = LinfPGDAttack(model,
                          config['epsilon'],
@@ -101,6 +102,9 @@ if __name__ == '__main__':
   with tf.Session() as sess:
     # Restore the checkpoint
     saver.restore(sess, model_file)
+    #model = Model()  # this and the next two statements are sometimes needed to resolve unnsuccessful restoration of checkpoint
+    #saver = tf.compat.v1.train.Saver()
+    #saver.restore(sess, model_file)
 
     # Iterate over the samples batch-by-batch
     num_eval_examples = config['num_eval_examples_train']  # changed from 'num_eval_examples
