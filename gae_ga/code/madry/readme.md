@@ -78,4 +78,4 @@ We found idiosyncracies in execution even when the steps above were taken.  The 
 
 # Reference
 
-Madry, Aleksander, Aleksandar Makelov, Ludwig Schmidt, Dimitris Tsipras, and Adrian Vladu, Towards Deep Learning Models Resistant to Adversarial Attacks, 2017, https://arxiv.org/abs/1706.06083.
+Madry, Aleksander, Aleksandar Makelov, Ludwig Schmidt, Dimitris Tsipras, and Adrian Vladu, Towards Deep Learning Models Resistant to Adversarial Attacks, 2017, https://arxiv.org/abs/1706.06083
