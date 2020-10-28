@@ -1,6 +1,11 @@
 # Revisions to Original Code for Publishing on GitHub
 
-The genetic algorithm code wqs modified from its original state to remove machine specific folder navigation options so that it 
+Modifications to the original code were necessary in order to adhere to GitHub file size restrictions and to modify machine-specific file paths so that the code 
+is more likely to run upon download.
+
+The training of the Madry model originally included
+
+The genetic algorithm code was modified from its original state to remove machine specific folder navigation options so that it 
 would be more generally usable upon download.  HEre are the chagnes that were made.
 
 - ga_control.py
