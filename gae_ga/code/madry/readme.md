@@ -17,7 +17,7 @@ We provide in this repo, therfore, the code we used to train the network, genera
 predict their classification label using the originating neural network.    The workflow we followed is noted below.  Note 
 that training a new neural network will result is a different set of weights than those 
 we used, and so the percentage of correctly classified adversarial examples will be different for your model than 
-it was for ours.  A zip file of a the code in this repository with the adversarial examples is available at https://wm1693.box.com/v/bbailab-madry-code . 
+it was for ours.  A zip file of a the code in this repository with the adversarial examples is available at https://wm1693.box.com/s/8a2rzj2ua7i8fqezut3gdpjkqq7bb4ob . 
 
 Before executing the steps below start with an IDE with a fresh Python interpreter to ensure 
 that no tensorflow graph exists already.  Otherwise, the new model will be added to that 
