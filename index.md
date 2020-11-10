@@ -16,4 +16,4 @@ generating adversarial examples for neural networks for the purposes of:
 
 Each paper has its own landing page, which contains links to the associated content:
 
-1. [Generating Adversarial Examples for Visual Similarity, Counterfactuals, and the Measurement of Robustness](./gae_ga/)
+1. [Generating Adversarial Examples for Visual Similarity, Counterfactuals, and the Measurement of Robustness](./gae_ga/){:target="_blank"}
