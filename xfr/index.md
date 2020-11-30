@@ -3,7 +3,7 @@
 
 - Draft of the paper
 - Code
-  - [Training code](https://wm1693.box.com/s/gcxhl50qsj2stz1xec3uk0jesnnpwi72){:target="_blank"}
+  - [Training code](https://wm1693.box.com/s/gcxhl50qsj2stz1xec3uk0jesnnpwi72)
     - The link above will download a zip file of the Python code used to train 100 instantiations of each of the predicting networks used in the article along with CSV files with adversarial example data that the programs read.
   - [Adversarial examples](https://wm1693.box.com/s/ucbcqx0al4y1nyvcliyalkljp5vbkbhp){:target="_blank"}
     - The link above will download a zip file of the adversarial examples and true labels for each AE types included in the article, each in a numpy .npy file which can be loaded with the numpy.load() statement.
