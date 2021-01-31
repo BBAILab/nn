@@ -1,4 +1,5 @@
 ---
+layout: default
 title: BB Labs Research
 description: Neural Network Research by Bradley and Blossom
 ---
@@ -6,6 +7,8 @@ description: Neural Network Research by Bradley and Blossom
 <!--- ![Under construction](under_construction.jpg) --->
 
 <!--- **This web site is under construction!!!** --->
+
+# Neural Network Research by Bradley and Blossom
 
 This site is a repository that contains ancillary content for the research of James R. Bradley and A. Paul Blossom focusing on 
 generating adversarial examples for neural networks for the purposes of:
