@@ -1,6 +1,7 @@
 ---
 layout: default
 title: BB Labs Research
+description: Neural Network Research by Bradley and Blossom
 ---
 
 <!--- ![Under construction](under_construction.jpg) --->
